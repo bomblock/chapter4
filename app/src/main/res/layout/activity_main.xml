@@ -23,7 +23,6 @@
         style="@style/Value"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:gravity="end"
         android:layout_marginEnd="36dp"
         android:text="김재승"
         android:ellipsize="end"
@@ -36,6 +35,7 @@
         android:id="@+id/birthdateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:maxLines="1"
         android:text="생년월일"
         style="@style/Title"
         app:layout_constraintStart_toStartOf="@+id/nameTextView"
@@ -47,6 +47,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0000-00-00"
+        android:ellipsize="end"
+        android:maxLines="1"
         app:layout_constraintBaseline_toBaselineOf="@+id/birthdateTextView"
         app:layout_constraintEnd_toEndOf="@+id/nameValueTextView"/>
 
@@ -111,5 +113,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
