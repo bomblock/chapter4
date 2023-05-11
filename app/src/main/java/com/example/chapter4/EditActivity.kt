@@ -9,7 +9,7 @@ import android.util.Log
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.core.view.isVisible
-import fastcampus.part1.chapter4.databinding.ActivityEditBinding
+import com.example.chapter4.databinding.ActivityEditBinding
 
 class EditActivity : AppCompatActivity() {
     private lateinit var binding: ActivityEditBinding
